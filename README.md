@@ -1,2 +1,2 @@
-# Protjeto-MyMusic
+# Projeto-MyMusic
 Site de musica.
