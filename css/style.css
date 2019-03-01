@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Righteous');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: 'Abel', sans-serif;
+}
+
+::placeholder{
+  color: #fff;
+}
+
+body{
+  background-color: #2c3e50;
+}
+
+.cabecalho{
+  background-color: #34495e;
+  height: 60px;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+}
+
+.player{
+  position: fixed;
+  bottom: 0;
+  background-color: #34495e;
+  height: 80px;
+  width: 100%;
+}
+
+.logo{
+  font-family: 'Righteous', sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 10%;
+  color: #fff;
+  float: left;
+}
+
+.search{
+  margin-left: 15%;
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  height: 40px;
+  width: 35%;
+  transition: width 0.5s;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  float: left;
+}
+
+.menu-mobiel{
+    border-top: 62px solid #fff;
+    background-color: #34495e;
+    width: 100%;
+    display: none;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    box-shadow: #000 0px 0px 30px;
+
+    padding: 20px;
+}
+
+.menu-mobiel-botao{
+  color: #fff;
+  text-align: center;
+
+  padding: 5px;
+  font-size: 25px;
+  background-color: #2c3e50;
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+}
+
+.mobiel-search{
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+
+  height: 40px;
+  width: 100%;
+  transition: width 0.5s;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+  border-radius: 5px;
+  float: left;
+}
+
+.musica-pic{
+  margin-bottom: 14px;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 5px;
+  width: 80px;
+  margin-left: 10%;
+  height: 80px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-profile{
+  margin-top: 10px;
+  margin-right: 5%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+   margin-top: 100px;
+   margin-left: 10%;
+   width: 80%;
+   height: 1000px;
+}
+
+.fav-ms-title{
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0px;
+  background-color: rgba(0,0,0,0.5);
+}
+.fav-ms-title p{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.fav-ms{
+  margin-bottom: 25px;
+  border: 5px solid rgba(0,0,0,0.5);
+  border-radius: 5px;
+  width: 200px;
+  margin-right: 1%;
+  height: 200px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: border 0.5s;
+}
+
+.player-content{
+
+}
+
+.menu-select-open{
+  display: none;
+  margin-top: 10px;
+  margin-left: 85%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  color: #Fff;
+  float: right;
+  position: absolute;
+}
+
+.menu-select-close{
+  display: none;
+  margin-top: 10px;
+  margin-left: 85%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  color: #Fff;
+  float: right;
+  position: absolute;
+}
+
+.player-close{
+  color: #fff;
+  margin-top: 15px;
+  margin-right: 5%;
+  float: right;
+}
+
+.player-open{
+ color: #fff;
+ display: none;
+ position: fixed;
+ right: 0;
+ margin-right: 5%;
+ margin-bottom: 40px;
+ bottom: 0;
+
+}
+
+.play{
+  color: #fff; margin-top: 20px; margin-left: 15px; float: left;
+}
+
+.pause{
+  color: #fff; margin-top: 20px; margin-left: -30px; float: left; position: relative; display: none;
+}
+
+@media(max-width: 900px) {
+  .menu-select-open{
+    display: block;
+
+  }
+  .menu-mobiel{
+    display: none;
+  }
+  .img-profile{
+    display: none;
+  }
+  .search{
+    display: none;
+  }
+  .player-content{
+    display: none;
+  }
+  .fav-ms{
+    width: 100px;
+    height: 100px;
+  }
+  .container{
+    width: 90%;
+    margin-left: 5%;
+  }
+  }
+ .search:hover{
+   width: 40%;
+ }
+.fav-ms:hover{
+  cursor: pointer;
+  border: 5px solid #34495e;
+  .fav-ms-title{  border: 5px solid #34495e;}
+}
+
+.fav-ms:hover .fav-ms-title{
+  cursor: pointer;
+  background-color: rgba(52,73,94, 0.5);
+}
